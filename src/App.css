@@ -1,38 +1,57 @@
 .App {
   text-align: center;
+  background-color: #F3EFC9;
+  height: 100vh;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.homePage__todo-section{
+  width: 50%;
+  height: fit-content;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: .5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.todo__item{
+  width: 100%;
+  margin:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   }
+  .item, .icon{
+    padding: 1rem;
+  }
+ 
+.icon{
+  display: flex;
+  column-gap: .5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.todoForm{
+  margin: 3rem auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  row-gap: 2rem;
+  width: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+label{
+  font-size: larger;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+  height: 2rem;
+}
+.submitButton{
+  background-color: #5E90F2;
+  border-radius: .5rem;
+  color: #fff;
+  width: 25%;
+  padding: .7rem 1.6rem;
+  margin: auto;
+  font-size: large;
 }
